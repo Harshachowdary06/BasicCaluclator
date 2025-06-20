@@ -22,11 +22,14 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
     padding-left: 20px;
+    padding: 10px;
+    overflow-y: scroll; /* enables vertical scroll */
+    white-space: pre-wrap; /* keeps line breaks and spacing */
+    font-family: monospace;
 }
 
 .actionSpace{
-    width: 73.8dvw;
+    width: 73dvw;
     height: 75dvh;
-    background-color: red;
     float: right;
 }

@@ -1,5 +1,5 @@
 function checkScreenSize() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 700 || window.innerHeight <400) {
       window.location.href = "assets/notCompaitable.html";
     }
   }

@@ -1,7 +1,6 @@
 function checkScreenSize() {
     
-  if (window.innerWidth > 768) {    
-      window.alert("Your screen is compatible Rerouting to the web page")
+  if (window.innerWidth > 700 ||  window.innerHeight > 400) {    
       window.location.href = "../index.html";
     }
   }
