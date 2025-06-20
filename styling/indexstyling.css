@@ -1,0 +1,32 @@
+.Screen{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.display{
+    width: 100dvw;
+    height: 25dvh;
+    background-color: aqua;
+    border: 1px solid black;
+    font-size: 75px;
+    text-align:right;
+
+}
+
+.history{
+    width: 25dvw;
+    height: 75dvh;
+    background-color: black;
+    float: left;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+
+.actionSpace{
+    width: 73.8dvw;
+    height: 75dvh;
+    background-color: red;
+    float: right;
+}

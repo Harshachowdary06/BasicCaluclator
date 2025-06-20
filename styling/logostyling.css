@@ -1,0 +1,16 @@
+.name{
+    width: 100dvw;
+    height: 100dvh;
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    padding-top: 10%;
+}
+.mainName{
+    font-family: fantasy;
+    font-size: 250px;
+}
+.lastName{
+    font-family: cursive;
+    font-size: 80px;
+}
