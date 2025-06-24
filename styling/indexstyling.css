@@ -1,35 +1,72 @@
-.Screen{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-.display{
-    width: 100dvw;
-    height: 25dvh;
-    background-color: aqua;
-    border: 1px solid black;
-    font-size: 75px;
-    text-align:right;
-
+.Screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
-.history{
-    width: 25dvw;
-    height: 75dvh;
-    background-color: black;
-    float: left;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+/* Display section on top */
+.display {
+  width: 100%;
+  height: 25dvh;
+  background-color: aqua;
+  border: 1px solid black;
+  font-size: 5dvw;
+  text-align: right;
+}
+
+/* Flex wrapper for bottom part */
+.mainContent {
+  display: flex;
+  width: 100%;
+  height: 75dvh;
+}
+
+/* History sidebar */
+.history {
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: xx-large;
+  padding: 10px 20px;
+  overflow-x :scroll;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+}
+
+/* Main action space */
+.actionSpace {
+  flex: 1;
+  height: 100%;
+  background-color: black; /* Optional */
+}
+
+/* Horizontal box inside action space */
+.horizontalbox {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  background-color: black;
+}
+
+/* Vertical buttons inside horizontal box */
+.fverticalbox {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(110, 107, 107);
+  margin: 5px;
+  display: flex;
+  border-radius: 35px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.fverticalbox:hover{
     font-size: xx-large;
-    padding-left: 20px;
-    padding: 10px;
-    overflow-y: scroll; /* enables vertical scroll */
-    white-space: pre-wrap; /* keeps line breaks and spacing */
-    font-family: monospace;
-}
-
-.actionSpace{
-    width: 73dvw;
-    height: 75dvh;
-    float: right;
 }

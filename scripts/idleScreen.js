@@ -1,5 +1,5 @@
 
-const idleLimit = 10 * 1000; // 60 seconds
+const idleLimit = 60 * 1000; // 60 seconds
 
 let idleTimer = setTimeout(redirectUser, idleLimit);
 
